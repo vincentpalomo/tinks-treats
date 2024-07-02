@@ -1,12 +1,10 @@
-import Image from 'next/image';
-
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* main */}
       <div>
         <nav>
-          <div>Tink's Trets</div>
+          <div>Tink&apos;s Trets</div>
           <div>
             <ul>
               <li>about</li>
@@ -15,17 +13,17 @@ export default function Home() {
             </ul>
           </div>
         </nav>
-        <h4>if you're curious...ask, won't know until you try it</h4>
-        <h1>Tink's Treats</h1>
+        <h4>if you&apos;re curious...ask, won&apos;t know until you try it</h4>
+        <h1>Tink&apos;s Treats</h1>
       </div>
       {/* about */}
       <div>
         <h1>About</h1>
         <p>
-          Inspired by her family's appetite and occasional sweet tooth, I'ona continued to experiment more and more with
-          new baking recipes for them to enjoy. It was later suggested that she begin selling her baked goods, which
-          much of the profits she has used to raise money for a series of financial missions that she has been grateful
-          to achieve.
+          Inspired by her family&apos;s appetite and occasional sweet tooth, I&apos;ona continued to experiment more and
+          more with new baking recipes for them to enjoy. It was later suggested that she begin selling her baked goods,
+          which much of the profits she has used to raise money for a series of financial missions that she has been
+          grateful to achieve.
         </p>
         <p>
           Shoutout to all that have supported before and welcome all who are about to find their new favorite website :)
@@ -71,7 +69,7 @@ export default function Home() {
         <h1>contact</h1>
         <h3>phone: 770-299-9476</h3>
         <h3>email: ifreeman.bakedgoods@gmail.com</h3>
-        <div>Tink's Treats</div>
+        <div>Tink&apos;s Treats</div>
       </div>
     </main>
   );
