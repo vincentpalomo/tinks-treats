@@ -17,6 +17,10 @@ const config: Config = {
         darkbrown: '#363020',
         teal: '#177E89',
       },
+      fontFamily: {
+        dahlia: ['dahlia'],
+        dahliarc: ['dahlia-reg-con'],
+      },
     },
   },
   plugins: [],

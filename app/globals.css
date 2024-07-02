@@ -3,3 +3,12 @@
 @tailwind utilities;
 
 
+@font-face {
+  font-family: 'dahlia';
+  src: url('/app/fonts/dahlia-regular.woff');
+}
+
+@font-face {
+  font-family: 'dahliarc';
+  src: url('/app/fonts/dahlia-regularcondensed.woff');
+}
