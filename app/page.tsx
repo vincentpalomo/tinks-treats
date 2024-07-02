@@ -1,10 +1,10 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-whitesmoke overflow-hidden">
       {/* main */}
-      <div>
-        <nav>
-          <div>Tink&apos;s Trets</div>
+      <div className="reletive w-screen h-screen border-2 border-red-500 overflow-hidden">
+        <nav className="hidden sm:block">
+          <div className="text-2xl">Tink&apos;s Trets</div>
           <div>
             <ul>
               <li>about</li>
@@ -13,8 +13,10 @@ export default function Home() {
             </ul>
           </div>
         </nav>
-        <h4>if you&apos;re curious...ask, won&apos;t know until you try it</h4>
-        <h1>Tink&apos;s Treats</h1>
+        <h4 className="hidden sm:block">if you&apos;re curious...ask, won&apos;t know until you try it</h4>
+        <h1 className="text-[200px] leading-[100px] tracking-tighter absolute border border-red-500 bottom-[200px] -left-[450px] rotate-90">
+          Tink&apos;sTreats
+        </h1>
       </div>
       {/* about */}
       <div>
