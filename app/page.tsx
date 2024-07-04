@@ -3,11 +3,32 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { gsap } from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+
+gsap.registerPlugin(ScrollToPlugin);
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const scrollToHome = () => {
+    gsap.to(window, { duration: 2, scrollTo: { y: '#home' } });
+    setIsOpen(!isOpen);
+  };
+  const scrollToAbout = () => {
+    gsap.to(window, { duration: 2, scrollTo: { y: '#about' } });
+    setIsOpen(!isOpen);
+  };
+  const scrollToMenu = () => {
+    gsap.to(window, { duration: 2, scrollTo: { y: '#menu' } });
+    setIsOpen(!isOpen);
+  };
+  const scrollToContact = () => {
+    gsap.to(window, { duration: 2, scrollTo: { y: '#contact' } });
     setIsOpen(!isOpen);
   };
 
@@ -41,19 +62,11 @@ export default function Home() {
               </button>
             </div>
             <div className="flex flex-col h-screen justify-center items-center">
-              <ul className="flex flex-col justify-between text-[128px] leading-[100px] text-whitesmoke font-dahlia tracking-tight space-y-5 items-center">
-                <li>
-                  <a href="/">Home</a>
-                </li>
-                <li>
-                  <a href="/agents">About</a>
-                </li>
-                <li>
-                  <a href="/weapons">Contact</a>
-                </li>
-                <li>
-                  <a href="/maps">Menu</a>
-                </li>
+              <ul className="flex flex-col justify-between text-[128px] leading-[128px] text-whitesmoke font-dahlia tracking-tight space-y-1 items-center cursor-pointer">
+                <li onClick={scrollToHome}>Home</li>
+                <li onClick={scrollToAbout}>About</li>
+                <li onClick={scrollToMenu}>Menu</li>
+                <li onClick={scrollToContact}>Contact</li>
               </ul>
             </div>
           </div>
@@ -61,7 +74,7 @@ export default function Home() {
       </div>
 
       {/* main */}
-      <div className="reletive w-screen h-screen overflow-hidden">
+      <div className="reletive w-screen h-screen overflow-hidden" id="home">
         {/* web nav */}
         <nav className="hidden sm:block">
           <div className="text-2xl">Tink&apos;s Trets</div>
@@ -79,7 +92,10 @@ export default function Home() {
         </h1>
       </div>
       {/* about */}
-      <div className="w-screen h-screen overflow-hidden bg-teal flex flex-col items-start justify-center px-5">
+      <div
+        className="w-screen h-screen overflow-hidden bg-teal flex flex-col items-start justify-center px-5"
+        id="about"
+      >
         <h1 className="font-dahlia text-9xl text-darkbrown">About</h1>
         <p className="font-geistmono text-darkbrown text-[16px] leading-[24px] tracking-wider pt-10">
           Inspired by her family&apos;s appetite and occasional sweet tooth, I&apos;ona continued to experiment more and
@@ -92,7 +108,7 @@ export default function Home() {
         </p>
       </div>
       {/* menu */}
-      <div className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center bg-teal">
+      <div className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center bg-teal" id="menu">
         <div className="w-[95%] h-[90%] bg-whitesmoke rounded-xl flex flex-col items-center px-5">
           <h1 className="font-dahliamc text-teal tracking-tight leading-[50px] text-[56px] pt-10">Homemade Desserts</h1>
           <h4 className="font-geistmono text-darkbrown text-xl tracking-wider">services</h4>
@@ -127,7 +143,7 @@ export default function Home() {
         </div>
       </div>
       {/* contact */}
-      <div className="h-screen w-screen flex flex-col justify-center items-start">
+      <div className="h-screen w-screen flex flex-col justify-center items-start" id="contact">
         <h1 className="font-dahliamc text-9xl text-darkbrown mx-5">Contact</h1>
         <h3 className="font-dahliamc text-darkbrown text-[28px] mx-5 pt-10">phone: 770-299-9476</h3>
         <h3 className="font-dahliamc text-darkbrown text-[28px] mx-5">email: ifreeman.bakedgoods@gmail.com</h3>
