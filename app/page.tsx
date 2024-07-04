@@ -54,8 +54,6 @@ export default function Home() {
               </button>
             </div>
             <div className="flex flex-col h-screen justify-center items-center">
-              {/* <div className="font-Playfair text-off-white tracking-tight italic text-[64px]">navigation</div> */}
-
               <ul className="flex flex-col justify-between text-[128px] leading-[100px] text-whitesmoke font-dahlia tracking-tight space-y-5 items-center">
                 <li>
                   <a href="/">Home</a>
