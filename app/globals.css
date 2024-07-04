@@ -5,10 +5,10 @@
 
 @font-face {
   font-family: 'dahlia';
-  src: url('/app/fonts/dahlia-regular.woff');
+  src: url(fonts/dahlia-regular.woff);
 }
 
 @font-face {
   font-family: 'dahliarc';
-  src: url('/app/fonts/dahlia-regularcondensed.woff');
+  src: url(fonts/dahlia-regularcondensed.woff);
 }

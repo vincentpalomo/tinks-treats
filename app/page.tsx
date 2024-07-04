@@ -14,8 +14,8 @@ export default function Home() {
           </div>
         </nav>
         <h4 className="hidden sm:block">if you&apos;re curious...ask, won&apos;t know until you try it</h4>
-        <h1 className="text-[200px] leading-[100px] tracking-tighter absolute text-teal border border-red-500 bottom-[200px] -left-[365px] rotate-90 font-dahlia">
-          Tink&apos;sTreats
+        <h1 className="text-[200px] leading-[100px] tracking-tighter absolute text-teal border border-red-500 bottom-[335px] -left-[300px] rotate-90 font-dahlia">
+          Tink&#8217;sTreats
         </h1>
       </div>
       {/* about */}
