@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
@@ -10,26 +10,43 @@ gsap.registerPlugin(ScrollToPlugin);
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
+  const [currentSection, setCurrentSection] = useState('home');
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    // Change body background color based on currentSection
+    const body = document.querySelector('body');
+    if (body) {
+      if (currentSection === 'about' || currentSection === 'menu') {
+        body.style.backgroundColor = '#177E89'; // teal color
+      } else {
+        body.style.backgroundColor = '#D9D9D9'; // default background color
+      }
+    }
+  }, [currentSection]);
+
   const scrollToHome = () => {
     gsap.to(window, { duration: 2, scrollTo: { y: '#home' } });
     setIsOpen(!isOpen);
+    setCurrentSection('home');
   };
   const scrollToAbout = () => {
     gsap.to(window, { duration: 2, scrollTo: { y: '#about' } });
     setIsOpen(!isOpen);
+    setCurrentSection('about');
   };
   const scrollToMenu = () => {
     gsap.to(window, { duration: 2, scrollTo: { y: '#menu' } });
     setIsOpen(!isOpen);
+    setCurrentSection('menu');
   };
   const scrollToContact = () => {
     gsap.to(window, { duration: 2, scrollTo: { y: '#contact' } });
     setIsOpen(!isOpen);
+    setCurrentSection('contact');
   };
 
   return (
