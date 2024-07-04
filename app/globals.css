@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #D9D9D9;
+}
 
 @font-face {
   font-family: 'dahlia';
@@ -21,4 +24,9 @@
 @font-face {
   font-family: 'geistmono';
   src: url(fonts/GeistMono-Regular.woff);
+}
+
+@font-face {
+  font-family: 'giestmono-bold';
+  src: url(fonts/GeistMono-Bold.woff);
 }

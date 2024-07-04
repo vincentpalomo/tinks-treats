@@ -34,12 +34,12 @@ export default function Home() {
       {/* menu */}
       <div className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center bg-teal">
         <div className="w-[95%] h-[90%] bg-whitesmoke rounded-xl flex flex-col items-center px-5">
-          <h1 className="font-dahliamc text-teal text-[54px] pt-10">Homemade Desserts</h1>
+          <h1 className="font-dahliamc text-teal tracking-tight leading-[50px] text-[56px] pt-10">Homemade Desserts</h1>
           <h4 className="font-geistmono text-darkbrown text-xl tracking-wider">services</h4>
 
-          <div className="font-geistmono text-[16px]">
-            <div>menu</div>
-            <ul className="ml-5">
+          <div className="font-geistmono text-[16px] mx-1 mt-10 text-darkbrown">
+            <div className="font-geistmonob">menu</div>
+            <ul className="ml-5 list-disc">
               <li>Cream Cheese Cookie</li>
               <li>Peanut Butter Cookie</li>
               <li>Oreo Cookie</li>
@@ -47,19 +47,19 @@ export default function Home() {
               <li>Carrot Bread</li>
               <li>Banana Bread</li>
             </ul>
-            <div>prices</div>
-            <ul className="ml-5">
+            <div className="font-geistmonob">prices</div>
+            <ul className="ml-5 list-disc">
               <li>$8 per 15 cookie batch ($9 for Oreo batch)</li>
               <li>$8 per mini loaf</li>
               <li>$10 per loaf</li>
             </ul>
-            <div>extras</div>
-            <ul className="ml-5">
+            <div className="font-geistmonob">extras</div>
+            <ul className="ml-5 list-disc">
               <li>Chocolate Chips - .50</li>
               <li>Nuts - .50</li>
             </ul>
-            <div>policies</div>
-            <ul className="ml-5">
+            <div className="font-geistmonob">policies</div>
+            <ul className="ml-5 list-disc">
               <li>I need a week in advance order notice before expectancy</li>
               <li>I can do (health) requested substitutions for a $7 fee</li>
             </ul>
