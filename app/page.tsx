@@ -33,13 +33,13 @@ export default function Home() {
       </div>
       {/* menu */}
       <div className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center bg-teal">
-        <div className="w-[95%] h-[90%] bg-whitesmoke rounded-xl flex flex-col items-center">
+        <div className="w-[95%] h-[90%] bg-whitesmoke rounded-xl flex flex-col items-center px-5">
           <h1 className="font-dahliamc text-teal text-5xl pt-10">Homemade Desserts</h1>
           <h4 className="font-geistmono text-darkbrown text-xl tracking-wider">services</h4>
 
-          <div>
+          <div className="font-geistmono text-[16px]">
             <div>menu</div>
-            <ul>
+            <ul className="ml-5">
               <li>Cream Cheese Cookie</li>
               <li>Peanut Butter Cookie</li>
               <li>Oreo Cookie</li>
@@ -48,18 +48,18 @@ export default function Home() {
               <li>Banana Bread</li>
             </ul>
             <div>prices</div>
-            <ul>
+            <ul className="ml-5">
               <li>$8 per 15 cookie batch ($9 for Oreo batch)</li>
               <li>$8 per mini loaf</li>
               <li>$10 per loaf</li>
             </ul>
             <div>extras</div>
-            <ul>
+            <ul className="ml-5">
               <li>Chocolate Chips - .50</li>
               <li>Nuts - .50</li>
             </ul>
             <div>policies</div>
-            <ul>
+            <ul className="ml-5">
               <li>I need a week in advance order notice before expectancy</li>
               <li>I can do (health) requested substitutions for a $7 fee</li>
             </ul>
