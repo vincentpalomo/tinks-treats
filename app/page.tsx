@@ -50,7 +50,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-whitesmoke overflow-hidden">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-whitesmoke overflow-x-hidden">
       {/* mobile nav */}
       <div className="h-[100px] w-screen flex justify-between items-center px-10 bg-off-black sm:hidden fixed z-10">
         {/* logo */}
