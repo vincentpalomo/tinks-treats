@@ -1,8 +1,83 @@
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useState } from 'react';
+
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between bg-whitesmoke overflow-hidden">
+      {/* mobile nav */}
+      <div className="h-[100px] w-screen flex justify-between items-center px-10 bg-off-black sm:hidden fixed z-10">
+        {/* logo */}
+        <a href="/">
+          {/* <button className=" font-Mohave text-neutral-200">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+              <path
+                fill="#ff5252"
+                d="M5,10.885v11.761c0,0.878,0.289,1.732,0.823,2.43L17.4,40.215C17.778,40.71,18.365,41,18.988,41	h9.951c0.835,0,1.302-0.963,0.785-1.619L6.785,10.266C6.198,9.521,5,9.936,5,10.885z"
+              ></path>
+              <path
+                fill="#ff5252"
+                d="M27.245,28.389l13.964-18.07C41.792,9.563,43,9.976,43,10.93v12.465c0,0.395-0.117,0.781-0.336,1.109	l-3.07,4.606C39.223,29.666,38.598,30,37.93,30h-9.893C27.206,30,26.737,29.046,27.245,28.389z"
+              ></path>
+            </svg>
+          </button> */}
+        </a>
+        {/* menu */}
+        <button className="text-neutral-200" onClick={toggleMenu}>
+          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.86768 22.5V20H26.3677V22.5H3.86768ZM3.86768 16.25V13.75H26.3677V16.25H3.86768ZM3.86768 10V7.5H26.3677V10H3.86768Z"
+              fill="#363020"
+            />
+          </svg>
+        </button>
+
+        {/* nav menu open */}
+        {isOpen && (
+          <div className="fixed inset-0 z-50 bg-teal overflow-hidden sm:hidden">
+            <div className="absolute right-10 top-[34px]">
+              <button onClick={toggleMenu}>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 23.75L6.25 22L13.25 15L6.25 8L8 6.25L15 13.25L22 6.25L23.75 8L16.75 15L23.75 22L22 23.75L15 16.75L8 23.75Z"
+                    fill="#363020"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="flex flex-col h-screen justify-center items-center">
+              {/* <div className="font-Playfair text-off-white tracking-tight italic text-[64px]">navigation</div> */}
+
+              <ul className="flex flex-col justify-between text-[128px] leading-[100px] text-whitesmoke font-dahlia tracking-tight space-y-5 items-center">
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/agents">About</a>
+                </li>
+                <li>
+                  <a href="/weapons">Contact</a>
+                </li>
+                <li>
+                  <a href="/maps">Menu</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        )}
+      </div>
+
       {/* main */}
       <div className="reletive w-screen h-screen overflow-hidden">
+        {/* web nav */}
         <nav className="hidden sm:block">
           <div className="text-2xl">Tink&apos;s Trets</div>
           <div>
@@ -67,11 +142,17 @@ export default function Home() {
         </div>
       </div>
       {/* contact */}
-      <div>
-        <h1>contact</h1>
-        <h3>phone: 770-299-9476</h3>
-        <h3>email: ifreeman.bakedgoods@gmail.com</h3>
-        <div>Tink&apos;s Treats</div>
+      <div className="h-screen w-screen flex flex-col justify-center items-start">
+        <h1 className="font-dahliamc text-9xl text-darkbrown mx-5">Contact</h1>
+        <h3 className="font-dahliamc text-darkbrown text-[28px] mx-5 pt-10">phone: 770-299-9476</h3>
+        <h3 className="font-dahliamc text-darkbrown text-[28px] mx-5">email: ifreeman.bakedgoods@gmail.com</h3>
+        <Link
+          href={'https://www.instagram.com/iona._.but.with.an.apostrophe?igsh=MXEydXpqb2l5bjl2Yw%3D%3D&utm_source=qr'}
+        >
+          <Image src={'/images/instagram.svg'} alt="instagram" width={100} height={100} className="mx-5 pt-10" />
+        </Link>
+
+        <div className="hidden">Tink&apos;s Treats</div>
       </div>
     </main>
   );
