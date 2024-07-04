@@ -94,11 +94,20 @@ export default function Home() {
       <div className="reletive w-screen h-screen overflow-hidden flex flex-col items-center" id="home">
         {/* web nav */}
         <nav className="hidden sm:flex sm:justify-between sm:items-center sm:mx-10 sm:my-2 text-teal sm:w-[95%]">
-          <div className="text-[40px] leading-[40px] font-dahliabc cursor-pointer">Tink&apos;s Trets</div>
+          <div className="text-[40px] leading-[40px] font-dahliabc cursor-pointer">Tink&apos;s Treats</div>
           <ul className="flex justify-center items-center space-x-5 h-[40px] text-[24px] cursor-pointer font-geistmono">
-            <li className="hover:text-darkbrown">about</li>
-            <li className="hover:text-darkbrown">menu</li>
-            <li className="border-2 rounded-full px-3 border-teal hover:text-whitesmoke hover:bg-teal">contact</li>
+            <li className="hover:text-darkbrown" onClick={scrollToAbout}>
+              about
+            </li>
+            <li className="hover:text-darkbrown" onClick={scrollToMenu}>
+              menu
+            </li>
+            <li
+              className="border-2 rounded-full px-3 border-teal hover:text-whitesmoke hover:bg-teal"
+              onClick={scrollToContact}
+            >
+              contact
+            </li>
           </ul>
         </nav>
         <div className="h-[95%] w-[95%] sm:flex flex-col justify-end items-start bg-[length:1440px_900px] 2xl:bg-[length:1840px_1300px] 2xl:bg-center bg-[url('/images/ttbg.jpg')] hidden">
@@ -113,7 +122,7 @@ export default function Home() {
           </h1>
         </div>
 
-        <h1 className="text-[200px] leading-[100px] tracking-tight absolute text-teal bottom-[350px] -left-[320px] rotate-90 font-dahlia sm:rotate-0 sm:left-10 sm:bottom-20 sm:text-[316px] sm:hidden">
+        <h1 className="text-[192px] leading-[100px] absolute text-teal bottom-[350px] -left-[345px] rotate-90 font-dahlia sm:rotate-0 sm:left-10 sm:bottom-20 sm:text-[316px] sm:hidden">
           Tink&#8217;sTreats
         </h1>
       </div>
