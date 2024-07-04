@@ -12,3 +12,8 @@
   font-family: 'dahliarc';
   src: url(fonts/dahlia-regularcondensed.woff);
 }
+
+@font-face {
+  font-family: 'geistmono';
+  src: url(fonts/GeistMono-Regular.woff);
+}
