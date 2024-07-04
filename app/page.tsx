@@ -21,13 +21,13 @@ export default function Home() {
       {/* about */}
       <div className="w-screen h-screen overflow-hidden bg-teal flex flex-col items-start justify-center px-5">
         <h1 className="font-dahlia text-9xl text-darkbrown">About</h1>
-        <p className="font-geistmono text-darkbrown text-[20px] leading-[24px] pt-10">
+        <p className="font-geistmono text-darkbrown text-[16px] leading-[24px] tracking-wider pt-10">
           Inspired by her family&apos;s appetite and occasional sweet tooth, I&apos;ona continued to experiment more and
           more with new baking recipes for them to enjoy. It was later suggested that she begin selling her baked goods,
           which much of the profits she has used to raise money for a series of financial missions that she has been
           grateful to achieve.
         </p>
-        <p className="font-geistmono text-darkbrown text-[20px] leading-[24px] pt-5">
+        <p className="font-geistmono text-darkbrown text-[16px] leading-[24px] tracking-wider pt-5">
           Shoutout to all that have supported before and welcome all who are about to find their new favorite website :)
         </p>
       </div>
