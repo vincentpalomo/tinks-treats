@@ -16,20 +16,7 @@ export default function Home() {
       {/* mobile nav */}
       <div className="h-[100px] w-screen flex justify-between items-center px-10 bg-off-black sm:hidden fixed z-10">
         {/* logo */}
-        <a href="/">
-          {/* <button className=" font-Mohave text-neutral-200">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
-              <path
-                fill="#ff5252"
-                d="M5,10.885v11.761c0,0.878,0.289,1.732,0.823,2.43L17.4,40.215C17.778,40.71,18.365,41,18.988,41	h9.951c0.835,0,1.302-0.963,0.785-1.619L6.785,10.266C6.198,9.521,5,9.936,5,10.885z"
-              ></path>
-              <path
-                fill="#ff5252"
-                d="M27.245,28.389l13.964-18.07C41.792,9.563,43,9.976,43,10.93v12.465c0,0.395-0.117,0.781-0.336,1.109	l-3.07,4.606C39.223,29.666,38.598,30,37.93,30h-9.893C27.206,30,26.737,29.046,27.245,28.389z"
-              ></path>
-            </svg>
-          </button> */}
-        </a>
+        <div></div>
         {/* menu */}
         <button className="text-neutral-200" onClick={toggleMenu}>
           <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
