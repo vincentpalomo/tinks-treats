@@ -22,6 +22,11 @@ body {
 }
 
 @font-face {
+  font-family: 'dahliabc';
+  src: url(fonts/dahlia-boldcondensed.woff);
+}
+
+@font-face {
   font-family: 'geistmono';
   src: url(fonts/GeistMono-Regular.woff);
 }

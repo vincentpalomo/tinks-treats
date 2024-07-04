@@ -21,6 +21,7 @@ const config: Config = {
         dahlia: ['dahlia'],
         dahliarc: ['dahliarc'],
         dahliamc: ['dahliamc'],
+        dahliabc: ['dahliabc'],
         geistmono: ['geistmono'],
         geistmonob: ['giestmono-bold'],
       },

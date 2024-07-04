@@ -91,20 +91,29 @@ export default function Home() {
       </div>
 
       {/* main */}
-      <div className="reletive w-screen h-screen overflow-hidden" id="home">
+      <div className="reletive w-screen h-screen overflow-hidden flex flex-col items-center" id="home">
         {/* web nav */}
-        <nav className="hidden sm:block">
-          <div className="text-2xl">Tink&apos;s Trets</div>
-          <div>
-            <ul>
-              <li>about</li>
-              <li>menu</li>
-              <li>contact</li>
-            </ul>
-          </div>
+        <nav className="hidden sm:flex sm:justify-between sm:items-center sm:mx-10 sm:my-2 text-teal sm:w-[95%]">
+          <div className="text-[40px] leading-[40px] font-dahliabc cursor-pointer">Tink&apos;s Trets</div>
+          <ul className="flex justify-center items-center space-x-5 h-[40px] text-[24px] cursor-pointer font-geistmono">
+            <li className="hover:text-darkbrown">about</li>
+            <li className="hover:text-darkbrown">menu</li>
+            <li className="border-2 rounded-full px-3 border-teal hover:text-whitesmoke hover:bg-teal">contact</li>
+          </ul>
         </nav>
-        <h4 className="hidden sm:block">if you&apos;re curious...ask, won&apos;t know until you try it</h4>
-        <h1 className="text-[200px] leading-[100px] tracking-tight absolute text-teal bottom-[350px] -left-[320px] rotate-90 font-dahlia">
+        <div className="h-[95%] w-[95%] sm:flex flex-col justify-end items-start bg-[length:1440px_900px] 2xl:bg-[length:1840px_1300px] 2xl:bg-center bg-[url('/images/ttbg.jpg')] hidden">
+          <h4 className="hidden sm:block font-geistmono text-[30px] text-darkbrown tracking-tight leading-tight ml-5 2xl:ml-28">
+            if you&apos;re curious...ask, won&apos;t know
+          </h4>
+          <h4 className="hidden sm:block font-geistmono text-[30px] text-darkbrown tracking-tight leading-tight ml-5 2xl:ml-28">
+            until you try it
+          </h4>
+          <h1 className="font-dahlia text-[312px] leading-[260px] text-teal 2xl:mx-32 2xl:leading-[300px] 2xl:text-[360px] ml-1">
+            Tink&#8217;sTreats
+          </h1>
+        </div>
+
+        <h1 className="text-[200px] leading-[100px] tracking-tight absolute text-teal bottom-[350px] -left-[320px] rotate-90 font-dahlia sm:rotate-0 sm:left-10 sm:bottom-20 sm:text-[316px] sm:hidden">
           Tink&#8217;sTreats
         </h1>
       </div>
