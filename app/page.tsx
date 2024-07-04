@@ -32,10 +32,10 @@ export default function Home() {
         </p>
       </div>
       {/* menu */}
-      <div>
-        <div>
-          <h1>homemade desserts</h1>
-          <h4>services</h4>
+      <div className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center bg-teal">
+        <div className="w-[95%] h-[90%] bg-whitesmoke rounded-xl flex flex-col items-center">
+          <h1 className="font-dahliamc text-teal text-5xl pt-10">Homemade Desserts</h1>
+          <h4 className="font-geistmono text-darkbrown text-xl tracking-wider">services</h4>
 
           <div>
             <div>menu</div>
