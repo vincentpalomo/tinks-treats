@@ -19,7 +19,7 @@ const config: Config = {
       },
       fontFamily: {
         dahlia: ['dahlia'],
-        dahliarc: ['dahlia-reg-con'],
+        dahliarc: ['dahliarc'],
       },
     },
   },
