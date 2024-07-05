@@ -91,7 +91,7 @@ export default function Home() {
       </div>
 
       {/* web nav */}
-      <nav className="hidden sm:flex sm:justify-between sm:items-center sm:px-10 text-teal sm:w-[100%] fixed bg-whitesmoke h-[60px]">
+      <nav className="hidden sm:flex sm:justify-between sm:items-center sm:px-10 text-teal sm:w-[100%] fixed bg-whitesmoke h-[60px] z-10">
         <div className="text-[40px] leading-[40px] font-dahliabc cursor-pointer" onClick={scrollToHome}>
           Tink&#8217;s Treats
         </div>
@@ -201,11 +201,11 @@ export default function Home() {
             alt="instagram"
             width={100}
             height={100}
-            className="mx-5 sm:mx-10 pt-10 pb-20"
+            className="mx-5 sm:mx-10 pt-10 sm:pb-20 2xl:pb-40"
           />
         </Link>
 
-        <div className="hidden sm:block absolute bottom-0 left-[20px] font-dahlia text-[320px] leading-[250px] mt-20 text-darkbrown pointer-events-none">
+        <div className="hidden sm:block absolute bottom-0 left-[20px] 2xl:left-[20px] font-dahlia text-[320px] 2xl:text-[430px] leading-[270px] 2xl:leading-[350px] mt-20 text-darkbrown pointer-events-none">
           Tink&#8217;sTreats
         </div>
       </div>
