@@ -17,6 +17,11 @@ body {
 }
 
 @font-face {
+  font-family: 'dahliam';
+  src: url(fonts/dahlia-medium.woff);
+}
+
+@font-face {
   font-family: 'dahliamc';
   src: url(fonts/dahlia-mediumcondensed.woff);
 }

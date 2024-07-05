@@ -20,6 +20,7 @@ const config: Config = {
       fontFamily: {
         dahlia: ['dahlia'],
         dahliarc: ['dahliarc'],
+        dahliam: ['dahliam'],
         dahliamc: ['dahliamc'],
         dahliabc: ['dahliabc'],
         geistmono: ['geistmono'],
