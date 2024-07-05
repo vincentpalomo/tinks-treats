@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Tink's treats",
+  title: "Tink's Treats",
   description: 'Designed by LucidStudio',
 };
 
@@ -16,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       <body className={inter.className}>{children}</body>
     </html>
   );
