@@ -112,6 +112,7 @@ export default function Home() {
           Tink&#8217;sTreats
         </h1>
       </div>
+
       {/* about */}
       <div
         className="w-screen h-screen overflow-hidden bg-teal flex flex-col items-start justify-center px-5 sm:items-center"
@@ -128,6 +129,7 @@ export default function Home() {
           Shoutout to all that have supported before and welcome all who are about to find their new favorite website :)
         </p>
       </div>
+
       {/* menu */}
       <div className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center bg-teal" id="menu">
         <div className="w-[95%] h-[90%] sm:h-[85%] bg-whitesmoke rounded-xl flex flex-col items-center px-5 sm:mt-12">
@@ -167,6 +169,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       {/* contact */}
       <div className="h-screen w-screen flex flex-col justify-center items-start relative overflow-hidden" id="contact">
         <h1 className="font-dahliamc sm:font-dahlia text-9xl text-darkbrown mx-5 sm:mx-10">Contact</h1>
