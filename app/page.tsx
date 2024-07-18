@@ -5,6 +5,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import ContactForm from './components/ContactForm';
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -171,25 +172,37 @@ export default function Home() {
       </div>
 
       {/* contact */}
-      <div className="h-screen w-screen flex flex-col justify-center items-start relative overflow-hidden" id="contact">
-        <h1 className="font-dahliamc sm:font-dahlia text-9xl text-darkbrown mx-5 sm:mx-10">Contact</h1>
-        <h3 className="font-dahliamc sm:font-dahliam text-darkbrown text-[28px] sm:text-[40px] mx-5 sm:mx-10 pt-10">
-          phone: 770-299-9476
-        </h3>
-        <h3 className="font-dahliamc sm:font-dahliam text-darkbrown text-[28px] sm:text-[40px] mx-5 sm:mx-10">
-          email: ifreeman.bakedgoods@gmail.com
-        </h3>
-        <Link
-          href={'https://www.instagram.com/iona._.but.with.an.apostrophe?igsh=MXEydXpqb2l5bjl2Yw%3D%3D&utm_source=qr'}
-        >
-          <Image
-            src={'/images/instagram.svg'}
-            alt="instagram"
-            width={100}
-            height={100}
-            className="mx-5 sm:mx-10 pt-10 sm:pb-20 2xl:pb-40"
-          />
-        </Link>
+      <div
+        className="sm:h-screen h-full w-screen flex flex-col sm:flex-row sm:items-center sm:justify-between justify-center items-start relative overflow-hidden "
+        id="contact"
+      >
+        <div className="mt-32 mb-5 sm:mt-0 sm:mb-0">
+          <h1 className="font-dahliamc sm:font-dahlia text-9xl text-darkbrown mx-5 sm:mx-10">Contact</h1>
+          <h3 className="font-dahliamc sm:font-dahliam text-darkbrown text-[28px] sm:text-[40px] mx-5 sm:mx-10 pt-10">
+            phone: 770-299-9476
+          </h3>
+          <h3 className="font-dahliamc sm:font-dahliam text-darkbrown text-[28px] sm:text-[40px] mx-5 sm:mx-10">
+            email: ifreeman.bakedgoods@gmail.com
+          </h3>
+          <Link
+            href={'https://www.instagram.com/iona._.but.with.an.apostrophe?igsh=MXEydXpqb2l5bjl2Yw%3D%3D&utm_source=qr'}
+          >
+            <Image
+              src={'/images/instagram.svg'}
+              alt="instagram"
+              width={100}
+              height={100}
+              className="mx-5 sm:mx-10 pt-10 sm:pb-20 2xl:pb-40"
+            />
+          </Link>
+        </div>
+
+        <div className="sm:w-[50%] w-full px-5 sm:px-0 pb-5 sm:pb-10 2xl:pb-48 2xl:pl-10 flex flex-col">
+          <span className="text-center w-full font-geistmono tracking-widest font-bold text-darkbrown">
+            send me a message
+          </span>
+          {/* <ContactForm /> */}
+        </div>
 
         <div className="hidden sm:block absolute bottom-0 left-[20px] 2xl:left-[20px] font-dahlia text-[320px] 2xl:text-[430px] leading-[270px] 2xl:leading-[350px] mt-20 text-darkbrown pointer-events-none">
           Tink&#8217;sTreats
