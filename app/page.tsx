@@ -198,10 +198,10 @@ export default function Home() {
         </div>
 
         <div className="sm:w-[50%] w-full px-5 sm:px-0 pb-5 sm:pb-10 2xl:pb-48 2xl:pl-10 flex flex-col">
-          {/* <span className="text-center w-full font-geistmono tracking-widest font-bold text-darkbrown">
+          <span className="text-center w-full font-geistmono tracking-widest font-bold text-darkbrown">
             send me a message
-          </span> */}
-          {/* <ContactForm /> */}
+          </span>
+          <ContactForm />
         </div>
 
         <div className="hidden sm:block absolute bottom-0 left-[20px] 2xl:left-[20px] font-dahlia text-[320px] 2xl:text-[430px] leading-[270px] 2xl:leading-[350px] mt-20 text-darkbrown pointer-events-none">
