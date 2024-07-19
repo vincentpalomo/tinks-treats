@@ -198,9 +198,9 @@ export default function Home() {
         </div>
 
         <div className="sm:w-[50%] w-full px-5 sm:px-0 pb-5 sm:pb-10 2xl:pb-48 2xl:pl-10 flex flex-col">
-          <span className="text-center w-full font-geistmono tracking-widest font-bold text-darkbrown">
+          {/* <span className="text-center w-full font-geistmono tracking-widest font-bold text-darkbrown">
             send me a message
-          </span>
+          </span> */}
           {/* <ContactForm /> */}
         </div>
 
